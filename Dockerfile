@@ -7,6 +7,7 @@ RUN apt-add-repository ppa:ansible/ansible -y
 RUN apt update
 RUN apt install ansible -y
 RUN apt install python -y
+RUN apt install python-pymysql -y
 RUN mkdir -p /ansible/playbooks
 
 ENV ANSIBLE_GATHERING smart
